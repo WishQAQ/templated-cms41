@@ -1,0 +1,13 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003344-lp.png' text='首页' width='1423' height='2402'} http://up.a0218.com/uploads/allimg/151001/1-151001003344.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003431-lp.png' text='典型案例列表页' width='1423' height='1932'} http://up.a0218.com/uploads/allimg/151001/1-151001003431.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003443-lp.png' text='典型案例内容页' width='1423' height='1671'} http://up.a0218.com/uploads/allimg/151001/1-151001003443.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003456-lp.png' text='关于我们' width='1423' height='1671'} http://up.a0218.com/uploads/allimg/151001/1-151001003456.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003508-lp.png' text='联系我们' width='1423' height='1581'} http://up.a0218.com/uploads/allimg/151001/1-151001003508.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003522-lp.png' text='新闻中心列表页' width='1423' height='1932'} http://up.a0218.com/uploads/allimg/151001/1-151001003522.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003A1-lp.png' text='新闻中心内容页' width='1423' height='2536'} http://up.a0218.com/uploads/allimg/151001/1-151001003A1.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003F5-lp.png' text='研究院介绍' width='1423' height='1626'} http://up.a0218.com/uploads/allimg/151001/1-151001003F5.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003G8-lp.png' text='专家智囊列表页' width='1423' height='1536'} http://up.a0218.com/uploads/allimg/151001/1-151001003G8.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003I2-lp.png' text='专家智囊内容页' width='1423' height='1949'} http://up.a0218.com/uploads/allimg/151001/1-151001003I2.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003J4-lp.png' text='专业服务列表页' width='1423' height='1932'} http://up.a0218.com/uploads/allimg/151001/1-151001003J4.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151001/1-151001003K7-lp.png' text='专业服务内容页' width='1423' height='1671'} http://up.a0218.com/uploads/allimg/151001/1-151001003K7.png {/dede:img}

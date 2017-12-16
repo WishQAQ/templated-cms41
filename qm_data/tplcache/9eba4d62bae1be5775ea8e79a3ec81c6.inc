@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl/]">免责声明</a></li>

@@ -1,0 +1,13 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929221250-lp.png' text='首页' width='1423' height='1526'} http://up.a0218.com/uploads/allimg/150929/1-150929221250.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235538-lp.png' text='采购栏目页' width='1423' height='1279'} http://up.a0218.com/uploads/allimg/150929/1-150929235538.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235553-lp.png' text='采购内容页' width='1423' height='1279'} http://up.a0218.com/uploads/allimg/150929/1-150929235553.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235610-lp.png' text='集团概况' width='1423' height='1444'} http://up.a0218.com/uploads/allimg/150929/1-150929235610.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235623-lp.png' text='了解我们' width='1423' height='1547'} http://up.a0218.com/uploads/allimg/150929/1-150929235623.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235642-lp.png' text='联系我们封面' width='1423' height='1602'} http://up.a0218.com/uploads/allimg/150929/1-150929235642.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235P2-lp.jpg' text='项目介绍栏目' width='1423' height='2163'} http://up.a0218.com/uploads/allimg/150929/1-150929235P2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235Q7-lp.png' text='项目介绍内容页' width='1423' height='1706'} http://up.a0218.com/uploads/allimg/150929/1-150929235Q7.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235R8-lp.png' text='新闻中心栏目' width='1423' height='1279'} http://up.a0218.com/uploads/allimg/150929/1-150929235R8.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235T2-lp.png' text='新闻中心内容页' width='1423' height='1734'} http://up.a0218.com/uploads/allimg/150929/1-150929235T2.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235U5-lp.png' text='招贤纳士封面页' width='1423' height='1634'} http://up.a0218.com/uploads/allimg/150929/1-150929235U5.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150929/1-150929235Z6-lp.png' text='招贤纳士内容页' width='1423' height='1279'} http://up.a0218.com/uploads/allimg/150929/1-150929235Z6.png {/dede:img}

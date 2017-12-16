@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("pagestyle","",0,91);
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="200";
+$z[0][4]['row']="3";
+$z[0][4]['col']="6";
+$z[0][4]['value']="3";
+$z[1]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35322.jpg ",93,284);
+$z[1][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35322.jpg";
+$z[1][4]['text']="首页";
+$z[1][4]['width']="1423";
+$z[1][4]['height']="2987";
+$z[2]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35331.png ",286,483);
+$z[2][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35331.png";
+$z[2][4]['text']="关于我们";
+$z[2][4]['width']="1423";
+$z[2][4]['height']="1172";
+$z[3]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35338.png ",485,676);
+$z[3][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35338.png";
+$z[3][4]['text']="服务";
+$z[3][4]['width']="1423";
+$z[3][4]['height']="1045";
+$z[4]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35346.png ",678,875);
+$z[4][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35346.png";
+$z[4][4]['text']="新闻列表";
+$z[4][4]['width']="1423";
+$z[4][4]['height']="1452";
+$z[5]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35353.png ",877,1074);
+$z[5][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35353.png";
+$z[5][4]['text']="新闻内容";
+$z[5][4]['width']="1423";
+$z[5][4]['height']="1530";
+$z[6]=Array("img"," http://up.a0218.com/uploads/allimg/151008/1-15100Q35401.png ",1076,1273);
+$z[6][4]['ddimg']="http://up.a0218.com/uploads/allimg/151008/1-15100Q35401.png";
+$z[6][4]['text']="联系我们";
+$z[6][4]['width']="1423";
+$z[6][4]['height']="1442";
+
+?>

@@ -1,0 +1,11 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A532-lp.jpg' text='首页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A532.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A601-lp.jpg' text='产品列表页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A601.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A608-lp.jpg' text='产品详情页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A608.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A615-lp.jpg' text='右侧菜单' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A615.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A621-lp.jpg' text='客户案例栏目页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A621.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A629-lp.jpg' text='客户案例详情页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A629.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A637-lp.jpg' text='新闻动态栏目页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A637.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200A645-lp.jpg' text='新闻动态详情页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200A645.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200AA2-lp.jpg' text='企业简介页' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200AA2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151220/1-1512200AA9-lp.png' text='二维码' width='' height=''} http://up.a0218.com/uploads/allimg/151220/1-1512200AA9.png {/dede:img}

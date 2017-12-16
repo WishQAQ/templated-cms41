@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="{dede:global.cfg_soft_lang/}" /> 
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" /> 
+  <meta name="description" content="{dede:global.cfg_description/}" /> 
+  <meta name="author" content="{dede:global.cfg_basehost/}" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title><?php echo $msg; ?></title> 
+  <!--[if lt IE 9]>
+    <script src="/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="<?php echo $cfg_cmsurl; ?>/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $cfg_cmsurl; ?>/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="<?php echo $cfg_cmsurl; ?>/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $cfg_cmsurl; ?>/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="<?php echo $cfg_cmsurl; ?>/i/ajax_main.js"></script>
+ </head> 
+ <body> 
+ <?php pasterTempletDiy("head.htm"); ?>
+  <div id="container" class="container">
+  <section id="status">
+  <div class="content">
+    <div id="primary" class="primary" role="main">
+        <div class="status-wrapper">
+          <div class="message"><?php echo $msg; ?></div>
+          <div class="redirect"><?php echo $tzgourl; ?> <a href="<?php echo $gourl; ?>"><?php echo $gourl_title; ?></a></div>
+        </div>
+    </div>
+  </div>
+</section>
+</div>
+<script type='text/javascript'>
+var javin_page_redirect = {"time":"<?php echo $gourl_time - 1;?>","id":"status .redirect span","url":"<?php echo $gourl; ?>"};
+</script>
+<?php pasterTempletDiy("footer.htm"); ?>
+</body>
+</html>
+<!--
+**参数说明**
+	   -1	 //跳转上一页
+index.php  	 //跳转指定路径
+javascript:window.close(); //关闭窗口
+javascript:; //不跳转 无返回
+"index.php ",0,8 //显示所跳转的路径 这种则显示 index.php
+-->

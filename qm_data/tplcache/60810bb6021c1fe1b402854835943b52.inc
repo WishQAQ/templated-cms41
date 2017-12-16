@@ -1,0 +1,11 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001454-lp.png' text='首页' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001454.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001504-lp.png' text='创投课堂列表页' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001504.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001510-lp.png' text='关于我们' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001510.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001515-lp.png' text='联系我们' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001515.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001521-lp.png' text='企业团队' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001521.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001528-lp.png' text='投后服务' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001528.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001536-lp.png' text='投资案例列表页' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001536.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001549-lp.png' text='投资理念' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001549.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001556-lp.png' text='新闻动态列表页' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001556.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151005/1-151005001603-lp.png' text='新闻动态内容页' width='' height=''} http://up.a0218.com/uploads/allimg/151005/1-151005001603.png {/dede:img}

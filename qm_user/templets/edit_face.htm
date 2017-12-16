@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>修改头像_{dede:global.cfg_webname/}</title> 
+  <!--[if lt IE 9]>
+    <script src="{dede:global.cfg_cmsurl/}/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/dashboard.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/m.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/i/ajax_main.js"></script>
+  <!--arc_pic_up-->
+  <script type="text/javascript" src="<?php echo $cfg_cmsurl; ?>/skin/1.0/js/ajaxupload.3.5.js"></script>
+  <style type="text/css">
+  #header{background-color: #323232;}
+  #upload_button{ border:none; background:none}
+  </style>
+ </head> 
+ <body> 
+ <?php pasterTempletDiy("head.htm"); ?>  
+  <div id="container" class="container">
+   <div class="content page dashboard space centralnav"> 
+    <div id="primary" class="primary" role="main"> 
+     <div class="area"> 
+      <div class="page-wrapper"> 
+       <div class="dashboard-main"> 
+        <div class="dashboard-header">
+         <p class="sub-title">修改头像</p>
+         <p class="tip">提示：有一个好的头像会有意想不到的收获哦。</p>
+        </div> 
+        <div class="dashboard-wrapper select-avatar"> 
+         <form id="user-avatar" action="/i/?type=editface" method="post" name="userfile"> 
+         <input type="hidden" name="dopost" value="save" />
+         <input name='oldface' type='hidden' id='oldface' value='<?php echo $face; ?>' />
+         <input type="hidden" value="" name="face" id="picurl" >
+          <ul class="avatar-main"> 
+           <div class="avatar-preview"> 
+            <p>--- 头像预览 ---</p> 
+            <div class="format large">
+             <div class="img">
+              <img id="img_path" src="<?php echo $cfg_ml->fields['face']; ?>" class="avatar" width="100" height="100" />
+              <div class="refresh">
+               <i class="fa fa-refresh"></i>
+              </div>
+             </div>
+             <span>大尺寸头像：100x100像素</span>
+            </div> 
+            <div class="format medium">
+             <div class="img">
+              <img id="img_path1" src="<?php echo $cfg_ml->fields['face']; ?>" class="avatar" width="50" height="50" />
+              <div class="refresh">
+               <i class="fa fa-refresh"></i>
+              </div>
+             </div>
+             <span>中尺寸头像：50x50像素</span>
+            </div> 
+            <div class="format small">
+             <div class="img">
+              <img id="img_path2" src="<?php echo $cfg_ml->fields['face']; ?>" class="avatar" width="30" height="30" />
+              <div class="refresh">
+               <i class="fa fa-refresh"></i>
+              </div>
+             </div>
+             <span>小尺寸头像：30x30像素</span>
+            </div> 
+           </div> 
+           <div class="modify-area" style="padding:0"> 
+            <div id="upload-container"> 
+            <button id="upload_button" type="button">
+            <a id="upload-avatar" class="upload-button regular-button" href="#"><i class="fa fa-upload"></i>上传头像</a></button>
+            </div> 
+            <p class="tip">仅支持JPG、GIF、JPEG、PNG格式、文件小于2M。</p> 
+            <div id="loadimg" style="display:none;">
+            <img src="<?php echo $cfg_cmsurl; ?>/skin/1.0/images/loading.gif" />
+            <span>上传中，请稍候...</span></div>
+            <input type="submit" class="face_ok" value="保存头像" >
+           </div> 
+           
+           
+          </ul> 
+         </form> 
+        </div> 
+       </div> 
+      </div> 
+     </div>
+    <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+    </div> 
+   </div> 
+  </div>
+  <?php pasterTempletDiy("footer.htm"); ?>
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/comment-reply.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/ajax-comments.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/dashboard.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/plupload.full.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/handlers.min.js?ver=1.0"></script> 
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    ajaxUpload(
+        'upload_button', //上传的按钮id名称
+        1024,  //允许上传的文件大小（单位：kb）
+        '<?php echo $cfg_memberurl; ?>/upface/upload.php?form_name=userfile&file_size=1024', //提交服务器端地址
+        'userfile', //提交服务器文件表单名称
+        "$(\".img_div\").show();$(\"#img_path\").attr('src', obj.filename);$(\"#img_path1\").attr('src', obj.filename);$(\"#img_path2\").attr('src', obj.filename);$(\"#picurl\").attr('value', obj.filename);$(\"#title\").attr('value', obj.filename_o);$(\"#is_upload\").val('1');", //上传成功后执行的 js callback
+        'loadimg'  //loading 图片id
+    );
+});
+/**
+ * Ajax 无刷新上传图片（jpg|gif|png）
+ * @param string id_name id名称
+ * @param int filesize 文件大小 k 为单位
+ * @param string url   提交服务器端地址
+ * @param string filename 提交服务器文件表单名称
+ * @param string callback 上传成功运行代码
+ * @param string loadingid loading 图片id名称
+ * @return json
+ */
+function ajaxUpload(id_name, filesize, url, filename, callback, loadingid) {
+    var button = $('#'+id_name), interval;
+    var fileType = "pic", fileNum = "one";
+    new AjaxUpload(button,{
+        action: url,
+        name: filename,
+        onSubmit : function(file, ext){
+            if(fileType == "pic") {
+                if (ext && /^(jpg|png|jpeg|gif)$/.test(ext)){
+                    this.setData({
+                        'info': '文件类型为图片'
+                    });
+                } else {
+                    alert('提示：您上传的是非图片类型！');
+                    return false;
+                }
+            }
+            $("#"+loadingid).show();
+            if(fileNum == 'one') this.disable();
+        },
+        onComplete: function(file, response){
+            eval("var obj="+response);
+            if (obj.ok) {
+                eval(callback);
+            }else {
+                switch (response) {
+                    case '1':
+                        alert('提示：上传失败，图片不能大于'+filesize+'k！');
+                        break;
+                    case '3':
+                        alert('提示：图片只有部分文件被上传，请重新上传！');
+                        break;
+                    case '4':
+                        alert('提示：没有任何文件被上传！');
+                        break;
+                    case '5':
+                        alert('提示：非图片类型，请上传jpg|png|gif图片！');
+                        break;
+                    default:
+                        alert('提示：上传失败，错误未知，请您及时联系网站客服人员！');
+                        break;
+                }
+            }
+            $("#"+loadingid).hide();
+            window.clearInterval(interval);
+            this.enable();
+        }
+    });
+}
+</script>
+
+ </body>
+</html>

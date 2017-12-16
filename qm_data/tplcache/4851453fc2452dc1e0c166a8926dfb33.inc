@@ -1,0 +1,14 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930030943-lp.png' text='首页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930030943.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031034-lp.png' text='采购列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031034.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031045-lp.png' text='采购内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031045.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031057-lp.png' text='关于我们' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031057.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031108-lp.png' text='客户服务' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031108.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031124-lp.png' text='联系我们' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031124.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031135-lp.png' text='社会责任' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031135.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031148-lp.png' text='项目介绍列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031148.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031201-lp.png' text='项目介绍内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031201.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031225-lp.png' text='新闻资讯列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031225.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031235-lp.png' text='新闻资讯内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031235.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031249-lp.png' text='招贤纳士列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031249.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150930/1-150930031301-lp.png' text='招贤纳士内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150930/1-150930031301.png {/dede:img}

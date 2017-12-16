@@ -1,0 +1,15 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P22A3-lp.png' text='首页' width='1423' height='1357'} http://up.a0218.com/uploads/allimg/150928/1-15092P22A3.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P22H8-lp.png' text='首页-繁体版' width='1423' height='1357'} http://up.a0218.com/uploads/allimg/150928/1-15092P22H8.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P22U5-lp.png' text='关于我们' width='1423' height='1567'} http://up.a0218.com/uploads/allimg/150928/1-15092P22U5.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23233-lp.png' text='管理之道' width='1423' height='2243'} http://up.a0218.com/uploads/allimg/150928/1-15092P23233.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23307-lp.png' text='核心业务' width='1423' height='1096'} http://up.a0218.com/uploads/allimg/150928/1-15092P23307.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23320-lp.png' text='集团动态' width='1423' height='1267'} http://up.a0218.com/uploads/allimg/150928/1-15092P23320.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23333-lp.png' text='企业文化' width='1423' height='2015'} http://up.a0218.com/uploads/allimg/150928/1-15092P23333.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23346-lp.png' text='商务服务' width='1423' height='1447'} http://up.a0218.com/uploads/allimg/150928/1-15092P23346.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23405-lp.png' text='头部下拉导航' width='1423' height='1357'} http://up.a0218.com/uploads/allimg/150928/1-15092P23405.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23418-lp.png' text='头部下拉导航2' width='1423' height='1357'} http://up.a0218.com/uploads/allimg/150928/1-15092P23418.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23429-lp.png' text='新闻中心列表页' width='1423' height='2507'} http://up.a0218.com/uploads/allimg/150928/1-15092P23429.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23F1-lp.png' text='新闻中心内容页' width='1423' height='1162'} http://up.a0218.com/uploads/allimg/150928/1-15092P23F1.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23G7-lp.png' text='业务领域' width='1423' height='1192'} http://up.a0218.com/uploads/allimg/150928/1-15092P23G7.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150928/1-15092P23I0-lp.png' text='责任理念' width='1423' height='3518'} http://up.a0218.com/uploads/allimg/150928/1-15092P23I0.png {/dede:img}

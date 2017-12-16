@@ -1,0 +1,2 @@
+INSERT INTO `qimaweb_myad` VALUES('22','0','0','HTML5','HTML5专场广告','0','1441470726','1463139960','<div class=\"recommend\">\r\n   <a href=\"/moban/html5/\"><img src=\"/skin/1.0/images/list_store_a.jpg\" height=\"90\" width=\"1260\"></a>\r\n</div>','');
+INSERT INTO `qimaweb_myad` VALUES('23','2','0','ad-dowlist','下载页广告','0','1442666454','1445258454','<p style=\"line-height:336px;\">AD 356*359</p>','');

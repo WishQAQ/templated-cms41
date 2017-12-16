@@ -1,0 +1,2 @@
+INSERT INTO `qimaweb_myadtype` VALUES('1','全站通用');
+INSERT INTO `qimaweb_myadtype` VALUES('2','下载页广告');

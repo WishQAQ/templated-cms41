@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*
+	http://www.qimaweb.com/ V1.0
+*/
+
+/* 下载页面 */
+.dow{height:360px;margin:50px auto;padding:20px;background-color:#fff;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,.1);}
+.d-box{float:left;}
+.rig{margin-left:20px;width:478px;height:333px;}
+.gg-d{margin-right:20px; width:356px;}
+.gg-d .downImgBg{height:337px;text-align:center;color:#999;}
+.w360{width:360px;}
+.downImgBg{border:1px solid #ddd;box-shadow:0 1px 2px rgba(0,0,0,.1);padding:10px;border-radius:3px;}
+.downImgBg a{display:block;height:337px;overflow: hidden;}
+.downImgBg a img{width:100%;border-radius:2px;}
+.downPrompt{float:left;width:100%;word-break: break-all;line-height:27px;border-top:1px dotted #C8C8C8;padding:13px 0 10px;}
+.redText{color:#d10000;}
+.xzdz{overflow:hidden;height:75px;}
+.redText strong{font-size:16px;}
+.red_a{color:#d10000;text-decoration:underline;}
+.red_a:hover{color:#d10000;text-decoration: none;}
+.w504{width:504px;}
+.downRightBox{border:1px #e0e0e0 solid;box-shadow:1px 1px 2px rgba(0,0,0,.1);border-radius:3px;padding:12px;float:left;}
+.downDxBtn,.downDxBtn ul{width:100%;float:left;}
+.downDxBtn ul li{float:left;margin-right:10px;margin-bottom:10px;}
+.downDxBtn ul li a{width:180px;height:46px;line-height:46px;text-align:center;display:block;overflow:hidden;background:url(../images/dow-bg.png) no-repeat 0 0;font-size:16px;color:#FFF;text-shadow:#666 0 1px 0;}
+.downDxBtn ul li a i{margin-right:6px;}
+.downDxBtn ul.msg li a{background-image:none;border-radius:3px;text-shadow:none;text-indent:0px;box-shadow:1px 1px 2px rgba(0,0,0,.1);}
+.downDxBtn ul.msg li a.login{background-color:#EE7E05;}
+.downDxBtn ul.msg li a.reg{background-color:#EB3227;}
+.downDxBtn li a:hover{text-decoration:none;}
+
+/* 下载页面 End */

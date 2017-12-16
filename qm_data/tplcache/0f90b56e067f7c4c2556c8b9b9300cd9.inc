@@ -1,0 +1,9 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122600-lp.png' text='首页' width='1423' height='947'} http://up.a0218.com/uploads/allimg/151006/1-151006122600.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122607-lp.png' text='关于我们' width='1423' height='1320'} http://up.a0218.com/uploads/allimg/151006/1-151006122607.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122616-lp.png' text='联系我们' width='1423' height='1847'} http://up.a0218.com/uploads/allimg/151006/1-151006122616.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122621-lp.png' text='帮助中心' width='1423' height='1554'} http://up.a0218.com/uploads/allimg/151006/1-151006122621.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122628-lp.png' text='人才招聘列表页' width='1423' height='1178'} http://up.a0218.com/uploads/allimg/151006/1-151006122628.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122635-lp.png' text='人才招聘内容页' width='1423' height='1503'} http://up.a0218.com/uploads/allimg/151006/1-151006122635.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122642-lp.png' text='新闻资讯列表页' width='1423' height='1178'} http://up.a0218.com/uploads/allimg/151006/1-151006122642.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151006/1-151006122648-lp.png' text='新闻资讯内容页' width='1423' height='2676'} http://up.a0218.com/uploads/allimg/151006/1-151006122648.png {/dede:img}

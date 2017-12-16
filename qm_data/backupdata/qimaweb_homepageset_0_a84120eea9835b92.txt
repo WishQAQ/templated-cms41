@@ -1,0 +1,1 @@
+INSERT INTO `qimaweb_homepageset` VALUES('{style}/index.htm','../index.html','1');

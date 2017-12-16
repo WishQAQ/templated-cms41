@@ -1,0 +1,93 @@
+<?php
+if(!isset($GLOBALS['_vars'])) $GLOBALS['_vars'] = array(); 
+$fields = array();
+?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>客服中心_<?php echo $GLOBALS['cfg_webname']; ?></title> 
+  <!--[if lt IE 9]>
+    <script src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/dashboard.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/m.js"></script> 
+  <script language="javascript" type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/i/ajax_main.js"></script>
+  <style type="text/css">
+  #header{background-color: #323232;}
+  .dashboard .gird li .box{margin:0;margin-right:10px;}
+  .dashboard-header{padding-bottom:10px; margin-bottom:10px; border-bottom:1px dotted #dedede;}
+  .not-found{ text-align:center;}
+  .pageList{ margin-top:20px; text-align:center;}
+  .pageList span, .pageList a, .pageList strong{background-color:#f5f5f5;padding:10px 20px;border-radius:4px;display:inline-block;margin: 0 5px;vertical-align:top;color:#333;box-shadow:0 1px 1px rgba(0,0,0,.1);-webkit-transition: .15s all linear;transition: .15s all linear; border:1px solid #e1e1e1;}
+  .pageList a:hover{background-color:#00c3b6; color:#FFF; border:1px solid #00c3b6;}
+  </style>
+ </head> 
+ <body> 
+ <?php pasterTempletDiy("head.htm"); ?>
+  <div id="container" class="container">
+   <div class="content page dashboard space centralnav"> 
+    <div id="primary" class="primary" role="main"> 
+     <div class="area"> 
+      <div class="page-wrapper"> 
+       <div class="dashboard-main"> 
+       <div class="dashboard-header"> 
+        <p class="sub-title">客服中心</p> 
+        <?php echo $typemsg;?>
+       </div> 
+       <div class="dashboard-wrapper select-bindsns"> 
+          <div id="sns-area">
+          	 <div id="qq" class="list">
+		   		<ul>
+                    <li class="title"><i class="fa fa-qq"></i>腾讯QQ</li>
+                    <li class="info"><?php echo $cfg_zxkf;?></li>
+                    <li class="go-bind"><a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $cfg_zxkf;?>&site=qq&menu=yes" target="_blank">联系QQ</a></li>
+                </ul>
+			 </div>
+             <div id="weibo" class="list">
+		    	<ul>
+                    <li class="title"><i class="fa fa-phone"></i>服务电话</li>
+                    <li class="info"><?php echo $cfg_tel;?></li><li class="actions"><span class="bad"><a href="tel:<?php echo $cfg_tel;?>">电话联系</a></span></li>
+                </ul>
+			 </div>
+             <div id="weixin" class="list">
+		    	<ul>
+                    <li class="title"><i class="fa fa-weixin"></i>微信公众号</li>
+                    <li class="info"><?php echo $cfg_weixin;?></li><li class="actions"><span class="bad">公众号搜索</span></li>	
+                </ul>
+			 </div>
+          </div>		 
+       </div> 
+      </div> 
+      </div> 
+     </div> 
+    <?php include(DEDEMEMBER."/templets/menu.php"); ?> 
+    </div> 
+   </div> 
+  </div>
+  <?php pasterTempletDiy("footer.htm"); ?>
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/functions.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/comment-reply.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/ajax-comments.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/dashboard.min.js?ver=1.0"></script> 
+ </body>
+</html>

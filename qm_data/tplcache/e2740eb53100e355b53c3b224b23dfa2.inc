@@ -1,0 +1,13 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212017-lp.jpg' text='首页' width='1423' height='1918'} http://up.a0218.com/uploads/allimg/150925/1-150925212017.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212I1-lp.jpg' text='鼠标移动显示客服二维码' width='1423' height='1918'} http://up.a0218.com/uploads/allimg/150925/1-150925212I1.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212J0-lp.jpg' text='手机自适应版' width='800' height='4228'} http://up.a0218.com/uploads/allimg/150925/1-150925212J0.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212K1-lp.jpg' text='产品列表页' width='1423' height='1526'} http://up.a0218.com/uploads/allimg/150925/1-150925212K1.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212K6-lp.jpg' text='产品详情页' width='1423' height='1852'} http://up.a0218.com/uploads/allimg/150925/1-150925212K6.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212P9-lp.jpg' text='新闻资讯列表页' width='1423' height='1663'} http://up.a0218.com/uploads/allimg/150925/1-150925212P9.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212Q5-lp.jpg' text='新闻资讯内容页' width='1423' height='2134'} http://up.a0218.com/uploads/allimg/150925/1-150925212Q5.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212R1-lp.jpg' text='帮助中心' width='1423' height='917'} http://up.a0218.com/uploads/allimg/150925/1-150925212R1.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212R9-lp.jpg' text='使用视频' width='1423' height='1526'} http://up.a0218.com/uploads/allimg/150925/1-150925212R9.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212S4-lp.jpg' text='无刷新弹窗播放视频' width='1440' height='1792'} http://up.a0218.com/uploads/allimg/150925/1-150925212S4.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212T2-lp.jpg' text='关于我们' width='1423' height='1157'} http://up.a0218.com/uploads/allimg/150925/1-150925212T2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150925/1-150925212U0-lp.jpg' text='产品详情页大图相册预览' width='1423' height='1852'} http://up.a0218.com/uploads/allimg/150925/1-150925212U0.jpg {/dede:img}

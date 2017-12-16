@@ -1,0 +1,13 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120R7-lp.jpg' text='首页' width='1423' height='1548'} http://up.a0218.com/uploads/allimg/150923/1-150923120R7.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120S4-lp.jpg' text='产品中心列表页' width='1423' height='1158'} http://up.a0218.com/uploads/allimg/150923/1-150923120S4.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120T0-lp.jpg' text='产品中心详情页' width='1423' height='1034'} http://up.a0218.com/uploads/allimg/150923/1-150923120T0.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120T4-lp.jpg' text='工程承包（服务范围）列表页' width='1423' height='1221'} http://up.a0218.com/uploads/allimg/150923/1-150923120T4.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120T8-lp.jpg' text='工程承包详情页' width='1423' height='826'} http://up.a0218.com/uploads/allimg/150923/1-150923120T8.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120U6-lp.jpg' text='关于国机' width='1423' height='965'} http://up.a0218.com/uploads/allimg/150923/1-150923120U6.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120Z0-lp.jpg' text='联系我们' width='1423' height='1060'} http://up.a0218.com/uploads/allimg/150923/1-150923120Z0.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120Z4-lp.jpg' text='企业文化' width='1423' height='1383'} http://up.a0218.com/uploads/allimg/150923/1-150923120Z4.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120Z8-lp.jpg' text='社会责任' width='1423' height='1212'} http://up.a0218.com/uploads/allimg/150923/1-150923120Z8.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120916-lp.jpg' text='新闻中心列表页' width='1423' height='3289'} http://up.a0218.com/uploads/allimg/150923/1-150923120916.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120923-lp.jpg' text='新闻中心内容页' width='1423' height='973'} http://up.a0218.com/uploads/allimg/150923/1-150923120923.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150923/1-150923120937-lp.jpg' text='组织架构' width='1423' height='1509'} http://up.a0218.com/uploads/allimg/150923/1-150923120937.jpg {/dede:img}

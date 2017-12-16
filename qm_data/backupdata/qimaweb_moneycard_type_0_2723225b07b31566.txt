@@ -1,0 +1,5 @@
+INSERT INTO `qimaweb_moneycard_type` VALUES('6','251','200','套餐二（充200送51）');
+INSERT INTO `qimaweb_moneycard_type` VALUES('5','110','100','套餐一（充100送10）');
+INSERT INTO `qimaweb_moneycard_type` VALUES('7','400','300','套餐三（充300送100）');
+INSERT INTO `qimaweb_moneycard_type` VALUES('8','600','400','套餐四（充400送200）');
+INSERT INTO `qimaweb_moneycard_type` VALUES('9','800','500','套餐五（充500送300）');

@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",131,157);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",196,222);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",289,319);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",542,569);
+$z[3][4]['name']="cfg_basehost";
+$z[4]=Array("global","",571,597);
+$z[4][4]['name']="cfg_webname";
+$z[5]=Array("type","<li><a href=\"[field:typeurl/]\">[field:typename/]</a></li>",617,709);
+$z[5][4]['typeid']="24";
+$z[6]=Array("type","<li><a href=\"[field:typeurl/]\">免责声明</a></li>",719,806);
+$z[6][4]['typeid']="24";
+$z[7]=Array("channel","\r\n      	<li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>\r\n      	",1014,1150);
+$z[7][4]['type']="top";
+$z[7][4]['row']="3";
+$z[8]=Array("flink","",1352,1365);
+$z[9]=Array("global","",2789,2815);
+$z[9][4]['name']="cfg_webname";
+$z[10]=Array("global","",3117,3142);
+$z[10][4]['name']="cfg_cmsurl";
+$z[11]=Array("global","",3276,3302);
+$z[11][4]['name']="cfg_powerby";
+$z[12]=Array("global","",3303,3327);
+$z[12][4]['name']="cfg_beian";
+$z[13]=Array("global","",3629,3652);
+$z[13][4]['name']="cfg_zxkf";
+$z[14]=Array("global","",4198,4223);
+$z[14][4]['name']="cfg_cmsurl";
+$z[15]=Array("global","",4311,4336);
+$z[15][4]['name']="cfg_cmsurl";
+$z[16]=Array("global","",4433,4458);
+$z[16][4]['name']="cfg_cmsurl";
+$z[17]=Array("global","",4547,4572);
+$z[17][4]['name']="cfg_cmsurl";
+$z[18]=Array("global","",4655,4676);
+$z[18][4]['name']="cfg_tj";
+
+?>

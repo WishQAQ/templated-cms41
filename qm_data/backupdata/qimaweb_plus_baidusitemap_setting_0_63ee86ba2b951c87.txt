@@ -1,0 +1,7 @@
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('siteurl','http://www.a0218.com/','1444285020');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('checksign','79a3764da8fe1d9ba61b4950e7522449','1444285020');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('pingtoken','2807987ee48240872a0990d7e5938fc8','1444285023');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('bdpwd','76b228a2a517cafdaa','1443411106');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('setupmaxaid','62','1444285023');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('lastuptime_all','1443411107','1443411107');
+INSERT INTO `qimaweb_plus_baidusitemap_setting` VALUES('lastuptime_inc','1444285023','1444285023');

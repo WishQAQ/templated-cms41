@@ -1,0 +1,2 @@
+INSERT INTO `qimaweb_flink` VALUES('1','2','http://www.aliyun.com/','阿里云','','','','1442740045','1','2');
+INSERT INTO `qimaweb_flink` VALUES('3','1','//zhanoo.com','站窝窝网络','','','','1442740090','1','1');

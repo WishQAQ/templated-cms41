@@ -1,0 +1,10 @@
+User-agent: * 
+Disallow: /err/advancedsearch.php
+Disallow: /err/erraddsave.php
+Disallow: /err/disdls.php
+Disallow: /err/search.php
+Disallow: /include
+Disallow: /templets
+Disallow: /i
+Disallow: /help.php
+Disallow: /dabao.php

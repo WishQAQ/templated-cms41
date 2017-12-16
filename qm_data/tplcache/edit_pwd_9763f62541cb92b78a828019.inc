@@ -1,0 +1,85 @@
+<?php
+if(!isset($GLOBALS['_vars'])) $GLOBALS['_vars'] = array(); 
+$fields = array();
+?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>修改密码_<?php echo $GLOBALS['cfg_webname']; ?></title> 
+  <!--[if lt IE 9]>
+    <script src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/dashboard.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/m.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/i/ajax_main.js"></script>
+  <style type="text/css">
+  #header{background-color: #323232;}
+  </style>
+ </head> 
+ <body> 
+ <?php pasterTempletDiy("head.htm"); ?>  
+  <div id="container" class="container">
+   <div class="content page dashboard space centralnav"> 
+    <div id="primary" class="primary" role="main"> 
+     <div class="area"> 
+       <div class="page-wrapper"> 
+        <div class="dashboard-main"> 
+         <div class="dashboard-header">
+          <p class="sub-title">修改密码</p>
+          <p class="tip">提示：密码强度为中等以上才能进行保存修改操作。</p>
+         </div> 
+         <div class="dashboard-wrapper select-security"> 
+          <form id="user-security" action="<?php echo $GLOBALS['cfg_cmsurl']; ?>/i/?type=editpwd" method="post" name="form1"> 
+          <input type="hidden" name="dopost" value="save" />
+           <ul class="user-form"> 
+            <li><label for="pass">当前密码<small>*</small></label><input type="password" name="pass" id="pass" class="regular-text" required size="16" value="" autocomplete="off" /><span class="tip"><a href="<?php echo $GLOBALS['cfg_memberurl']; ?>/?type=resetpassword">忘记密码？</a></span></li> 
+            <li id="password"><label for="pass1">新密码<small>*</small></label><input type="password" name="pass1" id="pass1" class="regular-text" required size="16" value="" autocomplete="off" /></li> 
+            <li><label for="pass2">确认密码<small>*</small></label><input type="password" name="pass2" id="pass2" class="regular-text" required size="16" value="" autocomplete="off" /><span class="tip">请再输入一遍新密码。</span></li> 
+            <li><label></label>
+             <span class="tip" style="margin:10px 0;">您的密码最好至少包含7个字符。为了保证密码强度，使用大小写字母、数字和符号。</span></li> 
+            <li><label></label><input class="user-submit regular-button" type="submit" value="保存修改" name="submit"></li> 
+           </ul> 
+          </form> 
+         </div> 
+        </div> 
+       </div> 
+      </div>
+    <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+    </div> 
+   </div> 
+  </div>
+  <?php pasterTempletDiy("footer.htm"); ?>
+  <script type='text/javascript'>
+	/* <![CDATA[ */
+	var ajax_dashboard_object = {"ajaxurl":"","redirecturl":""};
+	/* ]]> */
+  </script>
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/comment-reply.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/ajax-comments.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/dashboard.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/plupload.full.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/handlers.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/password-strength-meter.min.js?ver=1.0"></script>
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/zxcvbn-async.min.js?ver=1.0"></script>
+ </body>
+</html>

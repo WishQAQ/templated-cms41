@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("pagestyle","",0,91);
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="200";
+$z[0][4]['row']="3";
+$z[0][4]['col']="4";
+$z[0][4]['value']="3";
+$z[1]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194344.png ",93,281);
+$z[1][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194344-lp.png";
+$z[1][4]['text']="首页";
+$z[1][4]['width']="";
+$z[1][4]['height']="";
+$z[2]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194410.png ",283,486);
+$z[2][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194410-lp.png";
+$z[2][4]['text']="新闻资讯列表页";
+$z[2][4]['width']="";
+$z[2][4]['height']="";
+$z[3]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194538.jpg ",488,691);
+$z[3][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194538-lp.jpg";
+$z[3][4]['text']="新闻资讯内容页";
+$z[3][4]['width']="";
+$z[3][4]['height']="";
+$z[4]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194544.png ",693,896);
+$z[4][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194544-lp.png";
+$z[4][4]['text']="节目动态列表页";
+$z[4][4]['width']="";
+$z[4][4]['height']="";
+$z[5]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194550.png ",898,1101);
+$z[5][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194550-lp.png";
+$z[5][4]['text']="节目动态内容页";
+$z[5][4]['width']="";
+$z[5][4]['height']="";
+$z[6]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194559.png ",1103,1306);
+$z[6][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194559-lp.png";
+$z[6][4]['text']="视频专区列表页";
+$z[6][4]['width']="";
+$z[6][4]['height']="";
+$z[7]=Array("img"," http://up.a0218.com/uploads/allimg/150920/1-150920194646.png ",1308,1502);
+$z[7][4]['ddimg']="http://up.a0218.com/uploads/allimg/150920/1-150920194646-lp.png";
+$z[7][4]['text']="平台介绍";
+$z[7][4]['width']="";
+$z[7][4]['height']="";
+
+?>

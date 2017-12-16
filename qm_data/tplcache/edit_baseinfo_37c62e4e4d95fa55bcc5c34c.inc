@@ -1,0 +1,99 @@
+<?php
+if(!isset($GLOBALS['_vars'])) $GLOBALS['_vars'] = array(); 
+$fields = array();
+?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>修改资料_<?php echo $GLOBALS['cfg_webname']; ?></title> 
+  <!--[if lt IE 9]>
+    <script src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/css/dashboard.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/m.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/i/ajax_main.js"></script>
+  <style type="text/css">
+  #header{background-color:#323232;}
+  .upload-button{line-height:28px;position:relative;text-align:center;}
+  .fileInput{height:40px;width:98px;overflow:hidden;position:absolute;right:0;top:0;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+  </style>
+ </head> 
+ <body> 
+ <?php pasterTempletDiy("head.htm"); ?>  
+  <div id="container" class="container">
+   <div class="content page dashboard space centralnav"> 
+    <div id="primary" class="primary" role="main"> 
+     <div class="area"> 
+      <div class="page-wrapper"> 
+       <div class="dashboard-main"> 
+        <div class="dashboard-header">
+         <p class="sub-title">个人资料</p>
+         <p class="tip">Hi，<i class="uname"><?php echo $cfg_ml->M_UserName; ?></i>，请如实填写以下内容，让大家更好的交流互动。</p>
+        </div> 
+        <div class="dashboard-wrapper select-profile"> 
+         <form id="user-edit" action="/i/" method="post" enctype="multipart/form-data" name="form1"> 
+         <input type="hidden" name="type" value="editinfo" >
+          <input type="hidden" name="olduser_bg" value="<?php echo $row['user_bg']; ?>" />
+          <input type="hidden" name="dopost" value="newsave" />
+          <ul class="user-form"> 
+           <li><label for="user_login">用户名<small>*</small></label><input type="text" id="user_login" class="regular-text readonly" required readonly value="<?php echo $cfg_ml->M_LoginID; ?>" /><span class="tip">用户名不可更改。</span></li> 
+           <li><label for="user_nicename">昵称<small>*</small></label><input type="text" name="uname" id="user_nicename" class="regular-text" required value="<?php echo $row['uname']; ?>" /></li> 
+           <li><label for="user_email">邮箱<small>*</small></label><input type="email" name="email" id="user_email" class="regular-text" required value="<?php echo $row['email']; ?>" /><span class="tip"><?php echo $emailyz; ?></span></li> 
+           <li><label for="user_url">电话/手机</label><input type="tel" name="user_tel" id="tel" class="regular-text" value="<?php echo $row['user_tel']; ?>" /></li> 
+           <li><label for="user_sina">新浪微博</label><input type="url" name="sin_web" id="user_sina" class="regular-text" value="<?php echo $row['sin_web']; ?>" /></li> 
+           <li><label for="user_tencentwb">腾讯微博</label><input type="url" name="ten_web" id="user_tencentwb" class="regular-text" value="<?php echo $row['ten_web']; ?>" /></li> 
+           <li><label for="user_qq">QQ号码</label><input type="number" name="user_qq" id="user_qq" class="regular-text" value="<?php echo $row['user_qq']; ?>" /></li> 
+           <li> 
+            <div id="upload-container" class="upload-personal-container"> 
+             <label for="personal_bg">主页背景</label>
+             <div class="personal-bg-preview">
+              <?php echo $mybg; ?>
+             </div> 
+             <a class="upload-button regular-button">
+            <input class="fileInput" name="user_bg" type="file" size="45"/>
+            <i class="fa fa-cloud-upload"></i>选择图片
+             </a>
+             <span class="tip">支持图片格式：jpg、gif、png，建议尺寸：1920x350像素。图片大小限制：500KB</span> 
+             <div id="upload-file-list"></div> 
+            </div> </li> 
+           <li><label for="description">个人说明</label><textarea name="qianming" id="description" class="description" placeholder="" rows="5" cols="30"><?php echo $row['qianming']; ?></textarea></li> 
+           <li><label for="description">资料保密</label><input name="zlbm" type="radio" class="zlbm" value="Y" <?php if($row['zlbm']=='Y') echo " checked='checked' "; ?>/>是<input name="zlbm" type="radio" class="zlbm er" value="N" <?php if($row['zlbm']=='N') echo " checked='checked' "; ?>/>否</li> 
+           <li><label></label><input id="update-profile" class="user-submit regular-button" type="submit" value="更新个人资料" name="submit" /></li> 
+          </ul> 
+         </form> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    <?php include(DEDEMEMBER."/templets/menu.php"); ?>
+    </div> 
+   </div> 
+  </div>
+  <?php pasterTempletDiy("footer.htm"); ?>
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/comment-reply.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/ajax-comments.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/dashboard.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/plupload.full.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="<?php echo $GLOBALS['cfg_cmsurl']; ?>/skin/1.0/js/handlers.min.js?ver=1.0"></script> 
+ </body>
+</html>

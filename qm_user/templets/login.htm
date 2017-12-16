@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title><?php echo $cfg_webname; ?>_用户登录</title> 
+  <link rel="stylesheet" href="<?php echo $cfg_cmsurl; ?>/skin/1.0/css/buttons.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="<?php echo $cfg_cmsurl; ?>/skin/1.0/css/login.min.css?ver=1.0" type="text/css" media="all" />
+  <link rel="stylesheet" href="<?php echo $cfg_cmsurl; ?>/skin/1.0/css/dashicons.min.css?ver=1.0" type="text/css" media="all" />
+  <script type="text/javascript">
+		function changeAuthCode() {
+			var num = 	new Date().getTime();
+			var rand = Math.round(Math.random() * 10000);
+			num = num + rand;
+			$('#ver_code').css('visibility','visible');
+			if ($("#vdimgck")[0]) {
+				$("#vdimgck")[0].src = "<?php echo $cfg_cmsurl; ?>/include/vdimgck.php?tag=" + num;
+			}
+			return false;
+		}
+ </script> 
+ </head> 
+ <body class="login login-action-lostpassword wp-core-ui locale-zh-cn"> 
+  <div id="login"> 
+   <h1><a href="<?php echo $cfg_cmsurl; ?>/" title="<?php echo $cfg_webname; ?>" tabindex="-1"><?php echo $cfg_webname; ?></a></h1>
+   <form name="loginform" id="loginform" action="<?php echo $cfg_cmsurl; ?>/i/" method="post">
+   <input type="hidden" name="type" value="do">
+   <input type="hidden" name="fmdo" value="user_login">
+   <input type="hidden" name="dopost" value="login">
+   <input type="hidden" name="gourl" value="<?php if(!empty($gourl)) echo $gourl;?>">
+	<p><label for="user_login">用户名<br><input name="userid" type="text" class="input" id="user_login" value="" size="20" aria-describedby="login_error"></label></p>
+	<p><label for="user_pass">密码<br><input type="password" name="pwd" id="user_pass" aria-describedby="login_error" class="input" value="" size="20"></label></p>
+    <?php if(preg_match("/2/",$safe_gdopen)){ ?>
+    <p><label for="vdcode">验证码<br>
+    <input id="vdcode" class="text login_from3" type="text" style="width:69%;text-transform:uppercase;" name="vdcode"/>
+    <img id="vdimgck" align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="<?php echo $cfg_cmsurl; ?>/include/vdimgck.php"/></label></p>
+    <?php } ?>
+    <p class="forgetmenot">
+      <label for="rememberme"><input name="keeptime" type="checkbox" id="rememberme" value="604800" checked/>一周内免输密码</label></p>
+	<p class="submit">
+		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="登录">
+	</p>
+    <p><a rel="nofollow" style="display:inline-block;" href="<?php echo $cfg_cmsurl; ?>/qqLogin/index.php<?php if(!empty($gourl)) echo "?gourl=".$gourl;?>"><img style="vertical-align:iddle;border:0 none;margin:20px 0 0 0;" src="<?php echo $cfg_cmsurl; ?>/images/qq_login.png"></a></p>
+   </form> 
+   <p id="nav">
+     <a href="<?php echo $cfg_cmsurl; ?>/i/?type=resetpassword">忘记密码？</a>
+     <a href="<?php echo $cfg_cmsurl;?>/i/?type=do&fmdo=user&dopost=regnew">没有账号？免费注册</a>
+   </p> 
+   <p id="backtoblog"><a href="<?php echo $cfg_cmsurl; ?>/" title="不知道自己在哪？">← 回到<?php echo $cfg_webname; ?></a></p> 
+  </div> 
+  <div class="clear"></div>   
+ </body>
+</html>

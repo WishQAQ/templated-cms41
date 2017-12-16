@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("global","",252,280);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("global","",320,347);
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",390,420);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",458,485);
+$z[3][4]['name']="cfg_basehost";
+$z[4]=Array("global","",982,1037);
+$z[4][4]['name']="keyword";
+$z[4][4]['function']="RemoveXSS(@me)";
+$z[5]=Array("global","",1038,1064);
+$z[5][4]['name']="cfg_webname";
+$z[6]=Array("global","",1109,1134);
+$z[6][4]['name']="cfg_cmsurl";
+$z[7]=Array("global","",1183,1208);
+$z[7][4]['name']="cfg_cmsurl";
+$z[8]=Array("global","",1300,1325);
+$z[8][4]['name']="cfg_cmsurl";
+$z[9]=Array("global","",1432,1457);
+$z[9][4]['name']="cfg_cmsurl";
+$z[10]=Array("global","",1560,1585);
+$z[10][4]['name']="cfg_cmsurl";
+$z[11]=Array("global","",1671,1696);
+$z[11][4]['name']="cfg_cmsurl";
+$z[12]=Array("global","",1812,1837);
+$z[12][4]['name']="cfg_cmsurl";
+$z[13]=Array("global","",1880,1905);
+$z[13][4]['name']="cfg_cmsurl";
+$z[14]=Array("include","",2258,2295);
+$z[14][4]['filename']="head-2.htm";
+$z[15]=Array("channel","\r\n        <li><a href=\"[field:typelink/]\">[field:typename/]</a></li>\r\n        ",2447,2675);
+$z[15][4]['type']="son";
+$z[15][4]['typeid']="7";
+$z[15][4]['noself']="yes";
+$z[15][4]['currentstyle']="<li class='current-cat'><a href='~typelink~' ~rel~>~typename~</a></li>";
+$z[16]=Array("list","\r\n       <li> \r\n        <a href=\"[field:arcurl/]\" target=\"_blank\" class=\"img\"><img data-original=\"[field:picname/]\" src=\"[field:global.cfg_cmsurl/]/skin/1.0/images/original269x269.png\" alt=\"[field:title/]\" width=\"270\" /></a>\r\n      <p><a href=\"[field:arcurl/]\" class=\"title\" title=\"[field:title/]\">[field:title/]</a></p>\r\n      <div class=\"data\"> \r\n         <time class=\"time\"><i class=\"fa fa-date\"></i>\r\n         	[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]\r\n         </time> \r\n         <span><i class=\"fa fa-dows\"></i>[field:dows/]</span> \r\n         <!--span><i class=\"fa fa-money-list\"></i>[field:needMoney/].00</span--> \r\n       </div> </li>\r\n	  ",2825,3530);
+$z[16][4]['titlelen']="40";
+$z[16][4]['pagesize']="20";
+$z[17]=Array("pagelist","",3694,3765);
+$z[17][4]['listitem']="info,index,end,pre,next,pageno";
+$z[17][4]['listsize']="5";
+$z[18]=Array("include","",3841,3878);
+$z[18][4]['filename']="footer.htm";
+
+?>

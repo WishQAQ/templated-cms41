@@ -1,0 +1,1 @@
+<a href="javascript:void(0);" dimg="[field:imgsrc/]">[field:text/]</a>

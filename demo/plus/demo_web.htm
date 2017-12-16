@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="white" name="apple-mobile-web-app-status-bar-style" /> 
+  <title>预览模板 | 网站演示</title> 
+  <link href="<?php echo $cfg_cmsurl; ?>/demo/plus/css/qm_demo.css" rel="stylesheet" type="text/css" /> 
+  <link href="<?php echo $cfg_cmsurl; ?>/demo/plus/css/main.css" rel="stylesheet" type="text/css" /> 
+  <link href="<?php echo $cfg_cmsurl; ?>/demo/plus/css/icon.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="<?php echo $cfg_cmsurl; ?>/favicon.ico" />
+ </head> 
+ <body style="overflow:hidden;"> 
+  <div id="iframeLoading" style="position:absolute; z-index:2">
+   <div class="loadingBox" style="text-align:center; line-height:240px;">LODING</div>
+  </div> 
+  <div id="pagePanel" class="openPanel" style="opacity:0;"> 
+   <div class="f_main" style="right:0"> 
+    <div class="r_header"> 
+     <h1 class="r_logo">
+     <a href="<?php echo $cfg_cmsurl; ?>"><img src="<?php echo $cfg_cmsurl; ?>/skin/1.0/images/demo_logo.png" /></a>
+     </h1> 
+     <div class="responsiveNav" id="rulers"> 
+      <span class="icon-screen" title="宽屏电脑" data-width="max" data-tips="3_t"></span> 
+      <span class="icon-x-pad" title="pad-横屏" data-width="1024" data-tips="3_t"></span> 
+      <span class="icon-tablet" title="pad-竖屏" data-width="768" data-tips="3_t"></span> 
+      <span class="icon-x-mobile" title="手机-横屏" data-width="480" data-tips="3_t"></span> 
+      <span class="icon-mobile" title="手机-竖屏" data-width="320" data-tips="3_t"></span> 
+      <!--span class="icon-qrcode" title="查看二维码" id="showQRcode" data-tips="3_t"></span--> 
+     </div> 
+     <div class="btnBox" id="toolsBox"> 
+      <div class="info" title="联系客服" role="viewTemp" data-tips="3_t"> 
+       <i class="infoIcon"></i> 
+      </div> 
+      <!--div class="employ" title="下载模板" role="userTemp" data-tips="3_t"> 
+       <i class="employIcon"></i> 
+      </div-->
+      <div class="employ" title="下载模板"> 
+       <a href="<?php echo $dowurl; ?>"><i class="employIcon"></i></a>
+      </div>  
+      <div class="quit" title="退出预览" role="outPreview" data-tips="3_t"> 
+       <i class="quitIcon"></i> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="f_content" id="pageContainer" style="bottom:0; top:74px;"> 
+     <div class="f_web" id="frameContainer"> 
+      <div id="frameMask"></div>
+       <span id="demo_web"></span>
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script src="<?php echo $cfg_cmsurl; ?>/demo/plus/demo_url.php?aid=<?php echo $aid; ?>&demo_web=Y" type="text/javascript" language="javascript"></script>
+  <script src="<?php echo $cfg_cmsurl; ?>/demo/plus/js/jquery-1.9.1.js"></script>
+  <script src="<?php echo $cfg_cmsurl; ?>/demo/plus/js/common.js"></script>
+  <script type="text/javascript" language="javascript">
+        var click = 'click',
+        supportTouch = false;
+        if ("ontouchend" in document) {
+            supportTouch = true;
+            if (navigator.userAgent.indexOf('QQ') < 0) {
+                document.write('<script src="/static/js/vMouse.js"><\/script>');
+                click = 'vclick';
+            };
+        };
+        /**
+        *标尺点击事件	
+        **/
+        var frameWidth = 'Max',
+        rulers = $('#rulers'),
+        pageContainer = $('#pageContainer'),
+        frameContainer = $('#frameContainer'),
+        pageFrame = $('#pageFrame');
+        $('span', rulers).litabs({
+            callBack: function(el) {
+                var frameWidth = el.data('width') == 'max' ? '100%': el.data('width');
+                frameContainer.width(frameWidth);
+            }
+        });
+        if (supportTouch) {
+            pageFrame.css('height', 'auto');
+            frameContainer.css({
+                '-webkit-overflow-scrolling': 'touch',
+                'overflow': 'auto'
+            });
+        };
+        pageFrame.load(function() {
+            if ($('#iframeLoading').length) {
+                $('#iframeLoading').remove();
+                $('#pagePanel').animate({
+                    opacity: 1
+                });
+            }
+        });
+        var login_user = 0;
+        var update_website_id = $.cookie('update_website_id');
+        if (update_website_id) {
+            $('div[role=userTemp]').remove();
+        }
+        $('#toolsBox').delegate('div[role]', click,
+        function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            switch ($(this).attr('role')) {
+            case 'viewTemp':
+				//联系客服
+                window.location.href = 'tencent://message/?uin=<?php echo $cfg_zxkf; ?>&Site=_25D4_25DA_25CF_25DF_25D7_25C9_25D1_25AF& Menu=yes';
+                break;
+            case 'outPreview':
+				//退出预览
+                window.location.href = '<?php echo $cfg_cmsurl; ?>/moban/<?php echo $aid; ?>.html';
+                break;
+            case 'userTemp':
+				//下载
+                //window.location.href = '<?php echo $dowurl; ?>';
+                break;
+            };
+        });
+        $('#showQRcode').on('click',
+        function() {
+            var imgSrc = '二维码.jpg';
+            var str = '<div style="text-align:center; height:230px;">扫描二维码<br /><img src="' + imgSrc + '"  width="180" /></div>';
+            Alert(str);
+        });
+        if (self != top) {
+            $('#toolsBox').hide();
+        }
+    </script>
+    <script>
+        ;
+        (function($) {
+            //setPhoneDropMenu('body', 'phone_active');
+            $('.openNav').click(function() {
+                $('.navBox').toggleClass('active');
+            });
+        })(jQuery);
+        if ($.browser.msie && $.browser.version < 10) {
+            $('<div style="padding:10px;">' + lowBrowserHtml + '</div>').prependTo('body');
+        }
+        ;
+    </script>
+ </body>
+</html>

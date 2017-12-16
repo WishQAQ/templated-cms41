@@ -1,0 +1,30 @@
+<script language="javascript" type="text/javascript">
+	<!--
+		function feedbackfm(){
+		  var taget_obj = document.getElementById('_feedbackfm');
+		  myajax = new DedeAjax(taget_obj,false,false,'','','');
+		  myajax.SendGet2("{dede:global.cfg_cmsurl/}/i/ajax_feedback.php");
+		  DedeXHTTP = null;
+		}
+	-->
+</script>
+<div id="comments" class="comments"> 
+    <div class="comment-respond">
+       <div id="respond">
+       		<form action="#" method="post" name="feedback" id="commentform" class="comment-form" onsubmit="return false;">
+               <input type="hidden" name="aid" id="aid" value="{dede:field.aid/}" />
+               <input type="hidden" id="cmsurl" value="{dede:global.cfg_cmsurl/}" />
+               <input type="hidden" id="phpurl" value="{dede:global.cfg_cmsurl/}/i" />
+               <input type="hidden" id="memberurl" value="{dede:global.cfg_cmsurl/}/i" />
+               <div id="_feedbackfm">
+                   <p class='must-log-in'>登录之后才能评论，请点击 <a class='user-signin' onclick='nologin()'>登录</a>。</p>
+               </div>
+               <script language="javascript" type="text/javascript">feedbackfm();</script>
+           </form>
+       </div>
+    </div>
+    <h2 class="comments-title"> 全部评论 / <strong id="contnuus">{dede:field.pinglun/}</strong> </h2>
+    <div id="conterr"></div>
+    <ol class="comment-list" id='commetcontent'></ol> 
+</div>
+<script language="javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/feedback.js"></script>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="织梦,Dede,调用,图片,缩,略图,DedeCMS5.7," />
+    <meta name="description" content="DedeCMS5.7默认的图集模型中的单页多图显示方式没有图片大图也就是原图的地址调用，但有时候我们想在图集内容页实现点击缩略图时弹出图片原图这样的效果，但原图的地址没有标签可" />
+    <meta name="author" content="http://127.0.0.27/self-help/36.html" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel='dns-prefetch' href='http://127.0.0.27/self-help/36.html'>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+	<title>织梦Dede调用图片缩略图_站窝窝模板网</title> 
+    <!--[if lt IE 9]>
+    <script src="/skin/1.0/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <link rel='stylesheet' href='/skin/1.0/css/font-awesome.min.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='/skin/1.0/css/style.css?ver=1.0' type='text/css' media='all' />
+    <link rel='canonical' href='http://127.0.0.27/self-help/36.html' />
+    <script type='text/javascript' src='/skin/1.0/js/jquery.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='/skin/1.0/js/jquery-migrate.min.js?ver=1.0'></script>
+    <script type="text/javascript" src="/skin/1.0/js/m.js"></script>
+    <script language="javascript" type="text/javascript" src="/i/ajax_main.js"></script>
+    <style type="text/css">
+  	#header{background-color: #323232;}
+  	</style>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+	<!--
+		function cklogin(){
+		  var taget_obj = document.getElementById('loginreg');
+		  myajax = new DedeAjax(taget_obj,false,false,'','','');
+		  myajax.SendGet2("/i/ajax_login-reg.php");
+		  DedeXHTTP = null;
+		}
+	-->
+</script> 
+  <header id="header"> 
+   <div class="content"> 
+    <div class="nav" role="navigation"> 
+     <ul id="nav-menu" class="nav-menu"> 
+      <li class="nav-toggle"> 
+       <div id="toggle-icon" class="toggle-icon" aria-controls="#nav-list" aria-expanded="false"> 
+        <i class="fa fa-bars"></i> 
+       </div> </li> 
+      <li class="signin-toggle" id="signin-toggle"></li> 
+      <li class="home-logo">
+      <a href="/"><span class="text-replace">站窝窝模板网</span></a>
+      </li> 
+     </ul> 
+     <ul id="nav-list" class="nav-list"> 
+      <li id="logo"><a href="/"><span class="text-replace">站窝窝模板网</span></a></li> 
+      <li><a href='/' title="站窝窝模板网">站窝窝模板网</a></li>
+	  
+      <li><a href='/moban/'  rel='dropmenu7'>网站模板</a></li>
+      
+      <li><a href='/plug-in/'  rel='dropmenu20'>CMS插件</a></li>
+      
+      <li><a href='/activity/'  rel='dropmenu15'>官方活动</a></li>
+      
+      <li><a href='/self-help/'  rel='dropmenu9'>自助服务</a></li>
+      
+      <li><a>更多</a> 
+       <ul class="sub-menu"> 
+        <li><a href="/notice/">通知</a></li>
+        <!--li><a href="#">关于我们</a></li--> 
+        <li><a href="/self-help/contact/">留言联系</a></li>
+        <li><a href="http://www.a0218.com/url.php">保存桌面</a></li> 
+       </ul> </li> 
+       <li id="loginreg">
+           <div><a data-sign="0" id="user-signin" class="user-signin">登录</a></div>
+           <div><a data-sign="1" id="user-reg" class="user-reg">注册</a></div>
+       </li>
+       <script language="javascript" type="text/javascript">cklogin();</script>
+       <li id="search" role="search"> 
+       <form id="searchform" action="/i/" method="post"> 
+        <div class="search-input-wrapper"> 
+         <span class="search-icon"><i class="fa fa-search"></i></span> 
+         <input type="hidden" name="type" value="search">
+         <input type="hidden" name="kwtype" value="0">
+         <input type="search" class="search-input" name="q" id="search-input" onkeyup="lookup(this.value);" onblur="fill();" value="" placeholder="输入关键词搜索..." autocomplete="off"> 
+         <button type="submit" class="search-submit" id="search-submit" disabled="disabled"></button> 
+         <div class="suggestionsBox" id="suggestions" style="display: none;"> 
+            <div class="suggestionList"><ul id="autoSuggestionsList"></ul></div> 
+          </div> 
+        </div> 
+       </form> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </header>  
+<div id="container" class="container">
+<div class="content single">
+  <!--广告位-->
+  <div class="recommend">
+   <a href="/moban/html5/"><img src="/skin/1.0/images/list_store_a.jpg" height="90" width="1260"></a>
+</div>
+   <div id="primary" class="primary" role="main">
+     <div class="area">
+       <article>
+        <header class="single-header">
+        <div class="single-meta">
+           <div class="author-avatar">
+           <a target="_blank" href="http://127.0.0.27/i/?uid=admin" title="站窝窝网络的主页" rel="author">
+           <img src="http://127.0.0.27/images/admin_pic.png" class="avatar" width="70" height="70" /> 
+           </a>
+           </div>
+           <h1 class="title">织梦Dede调用图片缩略图</h1>
+           <p class="info"><span class="cat-links">分类栏目：<a href="/self-help/problem/" target="_blank">常见问题</a></span></p>
+           <p class="copyright"><span>版权信息：</span>站内文章仅供学习与参考，如触及到您的版权信息，请与站窝窝模板网联系。</p>
+        </div>
+		<div class="data-meta">
+            <p class="badge-num" id="countnuus">29</p>
+            <p><span class="author"><time class="data-time"><a>站窝窝网络</a>发布于2015-09-19</time></span>
+            <span class="comments-link"><a href="#comments"><script type="text/javascript" src="/i/feedcount.php?aid=36&type=pinglun"></script>条评论</a></span></p>
+		</div>
+	</header>
+	<div class="single-content">
+    <p>
+	DedeCMS5.7默认的图集模型中的单页多图显示方式没有图片大图也就是原图的地址调用，但有时候我们想在图集内容页实现点击缩略图时弹出图片原图这样的效果，但原图的地址没有标签可以调用，但是我们可以通过修改系统文件来实现这一的调用，方法其实非常简单，下面是具体操作步骤：<br />
+	第一步、进入后台将图集默认展示方式设置成第三种，即多缩略图模式；<br />
+	第二步、打开/include/taglib/channel/img.lib.php文件，在里面大概在148行左右的位置找到如下代码：<br />
+	$fields[&#39;imgsrc&#39;] = $fields[&#39;ddimg&#39;];<br />
+	将其修改成下面的代码<br />
+	$fields[&#39;imgsrc&#39;] = $fields[&#39;imgsrc&#39;];<br />
+	这样修改后，即可在图集内容页的图片输出循环标签中使用[field:imgsrc/]来读取图片的原图地址，使用[field:ddimg/]可以读取图片缩略图地址，这样就可以轻松实现上面的效果了。</p>
+
+	</div>
+    <footer class="single-footer">
+    <div class="single-heart"><a class="heart-this" href="/self-help/problem/"><i class='fa fa-back'></i><span class='heart-text'>返回列表</span></a><div class='loading-line'></div></span></div>
+    <div class="tag-share">
+		  <div class="tag-links"><span><i class="fa fa-tags"></i>标签</span>
+          
+          </div>
+          <div class="share">
+            <div class="bdsharebuttonbox bdshare-button-style1-24" data-bd-bind="1441443514241">
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+          </div>
+      </div>
+      <nav class="navigation post-navigation" role="navigation">
+		<div class="nav-links">
+		<a class'pre-post' href='/self-help/35.html' rel='prev'><i class='fa fa-arrow-circle-left'></i>上一篇：织梦{dede:memberinfos}标签不调用管理员信息</a>                
+        <a class='next-post' href='/self-help/38.html' rel='next'>下一篇：织梦channel type='son' 标签调用栏目简介<i class='fa fa-arrow-circle-right'></i></a> 
+		</div>
+	 </nav>
+	</footer>
+  </article>
+ </div>
+<div class="area">
+<script language="javascript" type="text/javascript">
+	<!--
+		function feedbackfm(){
+		  var taget_obj = document.getElementById('_feedbackfm');
+		  myajax = new DedeAjax(taget_obj,false,false,'','','');
+		  myajax.SendGet2("/i/ajax_feedback.php");
+		  DedeXHTTP = null;
+		}
+	-->
+</script>
+<div id="comments" class="comments"> 
+    <div class="comment-respond">
+       <div id="respond">
+       		<form action="#" method="post" name="feedback" id="commentform" class="comment-form" onsubmit="return false;">
+               <input type="hidden" name="aid" id="aid" value="36" />
+               <input type="hidden" id="cmsurl" value="" />
+               <input type="hidden" id="phpurl" value="/i" />
+               <input type="hidden" id="memberurl" value="/i" />
+               <div id="_feedbackfm">
+                   <p class='must-log-in'>登录之后才能评论，请点击 <a class='user-signin' onclick='nologin()'>登录</a>。</p>
+               </div>
+               <script language="javascript" type="text/javascript">feedbackfm();</script>
+           </form>
+       </div>
+    </div>
+    <h2 class="comments-title"> 全部评论 / <strong id="contnuus">0</strong> </h2>
+    <div id="conterr"></div>
+    <ol class="comment-list" id='commetcontent'></ol> 
+</div>
+<script language="javascript" src="/skin/1.0/js/feedback.js"></script>
+</div>
+</div>
+</div>
+</div>
+  <footer id="footer"> 
+   <div class="content"> 
+    <nav class="inner"> 
+     <aside id="describe" class="group"> 
+      <h3>站窝窝模板网</h3> 
+      <p class="describe-text">站窝窝模板网是站窝窝网络旗下资源网站之一的模板站</p> 
+      <p>站窝窝模板专业提供网站模板，CMS程序模板，程序插件，CMS使用教程等站长资源，致力于打造最专业的模板分享平台！</p> 
+      <p class="stamp"></p> 
+     </aside> 
+     <aside class="group">
+      <h3 class="title">关于</h3>
+      <div class="menu-about-container">
+       <ul id="menu-about" class="menu">
+        <li><a href="http://127.0.0.27">站窝窝模板网</a></li> 
+        <li><a href="/self-help/contact/">留言联系</a></li>
+        <li><a href="/self-help/contact/">免责声明</a></li>
+       </ul>
+      </div>
+     </aside>
+     <aside class="group">
+      <h3 class="title">栏目</h3>
+      <div class="menu-category-container">
+       <ul id="menu-category" class="menu">
+        
+      	<li><a href='/moban/'  rel='dropmenu7'>网站模板</a></li>
+      	
+      	<li><a href='/plug-in/'  rel='dropmenu20'>CMS插件</a></li>
+      	
+      	<li><a href='/activity/'  rel='dropmenu15'>官方活动</a></li>
+      	
+       </ul>
+      </div>
+     </aside>
+     <aside class="group">
+      <h3 class="title">友链</h3>
+      <div class="menu-links-container">
+       <ul id="menu-links" class="menu">
+        <li><a href='http://www.qimaweb.com' target='_blank'>站窝窝网络</a> </li><li><a href='http://www.aliyun.com/' target='_blank'>阿里云</a> </li>
+        <li><a href="http://webscan.360.cn/links-develop/apply/domain/www.a0218.com" target="_blank">申请友链</a></li>
+       </ul>
+      </div>
+     </aside> 
+     <aside id="social" class="group"> 
+      <h3 class="title">联系</h3> 
+      <ul> 
+       <li>邮箱: <a href="mailto:postmaster@qimaweb.com">postmaster@qimaweb.com</a></li> 
+       <li>电话: <a href="tel:057985660893">0579-85660893</a></li>
+       <li class="social-icon">
+       <a class="social-sina" rel="external nofollow" href="#"><i class="fa fa-weibo"></i>
+       <span class="text-replace">关注新浪微博</span></a>
+       <a class="social-qqwb" rel="external nofollow" href="#"><i class="fa fa-tencent-weibo"></i><span class="text-replace">关注腾讯微博</span></a>
+       <a class="social-qq" rel="external nofollow" href="tencent://message/?uin=383442255&Site=_25D4_25DA_25CF_25DF_25D7_25C9_25D1_25AF& Menu=yes"><i class="fa fa-qq"></i><span class="text-replace">QQ在线联系</span></a>
+       <a class="social-rss" rel="external nofollow" href="/rss.xml" target="_blank"><i class="fa fa-rss"></i><span class="text-replace">rss</span></a>
+       <a id="social-weixin" data-pop="weixin" class="social-weixin"><i class="fa fa-weixin"></i><span class="text-replace">微信</span></a> </li> 
+      </ul> 
+     </aside> 
+     <div id="weixin" class="popupbox weixin-box">
+      <div class="weixin-header">
+       站窝窝模板网官方微信公众号二维码
+       <a class="popup-close weixin-close">×</a>
+      </div>
+      <div class="weixin-content">
+       <span class="weixin-tip">打开微信，点击右上角的“魔法棒”，选择“扫一扫”功能，对准下方二维码即可。</span>
+       <img src="/skin/1.0/images/weixin.jpg" />
+      </div>
+     </div> 
+    </nav> 
+    <section class="site-info"> 
+     <p class="copyright">Copyright &copy; 2012-<script>document.write( new Date().getFullYear() );</script> 站窝窝网络版权所有 浙ICP备14022028号-1 自助友链：<script type="text/javascript" src="http://links.webscan.360.cn/index/index/3e7f9b81a3ee648cceb6e478d1a41491"></script></p> 
+    </section> 
+   </div> 
+  </footer> 
+  <div id="sign"></div>
+  <div id="suspend">
+   <a class="qq" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=383442255&site=qq&menu=yes" target="_blank"><i class="fa fa-qq"></i></a>  
+   <a id="backtop"><i class="fa fa-angle-up"></i></a> 
+  </div> 
+  <p clsss="bottom_ads" style="display:none;position:fixed;bottom:0px;width:100%;height:50px;z-index:99999;line-height:50px;text-align:center;font-size:18px;color:#FFFFFF;background-color:rgba(0,0,0,0.7);">好消息：站窝窝模板网BATE1.0版本对外出售！<a href="http://wpa.qq.com/msgrd?v=3&uin=383442255&site=qq&menu=yes" target="_blank" style="color:#FFFFFF;">点击咨询客服</a></p>
+  <script src="/i/nologin.php" type="text/javascript"></script>
+  <script type="text/javascript" src="/skin/1.0/js/idangerous.swiper.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="/skin/1.0/js/functions.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="/skin/1.0/js/ajax-sign-script.min.js?ver=1.0"></script>
+  <p style="display:none"><script src="http://s95.cnzz.com/stat.php?id=1256391513&web_id=1256391513" language="JavaScript"></script></p>
+<script type="text/javascript">
+window._bd_share_config={
+	"common":{
+		"bdSnsKey":{"tsina":"1865653506"},
+		"bdText":"织梦Dede调用图片缩略图",
+		"bdMini":"2",
+		"bdMiniList":false,
+		"bdPic":"http://127.0.0.27/images/defaultpic.gif",
+		"bdStyle":"1",
+		"bdSize":"24"
+	},
+	"share":{
+	}
+};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script type='text/javascript' src='/skin/1.0/js/loveit.min.js?ver=1.0'></script>
+<script src="/i/arc_ajax.php?aid=36" type="text/javascript"></script>
+<i style="display:none"><script src="/i/count.php?view=yes&aid=36&mid=1"type='text/javascript' language="javascript"></script></i>
+</body>
+</html>
+    

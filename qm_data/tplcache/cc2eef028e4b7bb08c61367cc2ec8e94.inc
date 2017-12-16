@@ -1,0 +1,13 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225632-lp.jpg' text='首页' width='1423' height='5863'} http://up.a0218.com/uploads/allimg/150922/1-150922225632.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225642-lp.jpg' text='案例展示' width='1423' height='1376'} http://up.a0218.com/uploads/allimg/150922/1-150922225642.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225A2-lp.jpg' text='公司团队' width='1423' height='1550'} http://up.a0218.com/uploads/allimg/150922/1-150922225A2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225I0-lp.jpg' text='产品展示' width='1423' height='1376'} http://up.a0218.com/uploads/allimg/150922/1-150922225I0.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225I4-lp.jpg' text='公司新闻列表页' width='1423' height='1851'} http://up.a0218.com/uploads/allimg/150922/1-150922225I4.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225P1-lp.jpg' text='公司新闻内容页' width='1423' height='3077'} http://up.a0218.com/uploads/allimg/150922/1-150922225P1.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225P7-lp.jpg' text='公司组织架构' width='1423' height='1550'} http://up.a0218.com/uploads/allimg/150922/1-150922225P7.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225Q2-lp.jpg' text='酒窖定制流程' width='1423' height='1550'} http://up.a0218.com/uploads/allimg/150922/1-150922225Q2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225S2-lp.jpg' text='酒窖设计团队' width='1423' height='1550'} http://up.a0218.com/uploads/allimg/150922/1-150922225S2.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225T0-lp.jpg' text='联系我们' width='1423' height='1510'} http://up.a0218.com/uploads/allimg/150922/1-150922225T0.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225T6-lp.jpg' text='品牌介绍' width='1423' height='1550'} http://up.a0218.com/uploads/allimg/150922/1-150922225T6.jpg {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150922/1-150922225Z0-lp.jpg' text='荣誉资质' width='1423' height='1510'} http://up.a0218.com/uploads/allimg/150922/1-150922225Z0.jpg {/dede:img}

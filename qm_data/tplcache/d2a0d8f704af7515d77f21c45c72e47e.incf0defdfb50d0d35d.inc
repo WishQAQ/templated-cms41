@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("pagestyle","",0,92);
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="2000";
+$z[0][4]['row']="0";
+$z[0][4]['col']="4";
+$z[0][4]['value']="3";
+$z[1]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220544.png ",94,290);
+$z[1][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220544-lp.png";
+$z[1][4]['text']="首页";
+$z[1][4]['width']="1423";
+$z[1][4]['height']="1118";
+$z[2]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220601.png ",292,493);
+$z[2][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220601-lp.png";
+$z[2][4]['text']="车辆展示";
+$z[2][4]['width']="1423";
+$z[2][4]['height']="866";
+$z[3]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220611.png ",495,696);
+$z[3][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220611-lp.png";
+$z[3][4]['text']="关于我们";
+$z[3][4]['width']="1423";
+$z[3][4]['height']="841";
+$z[4]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220617.png ",698,899);
+$z[4][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220617-lp.png";
+$z[4][4]['text']="联系我们";
+$z[4][4]['width']="1440";
+$z[4][4]['height']="711";
+$z[5]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220624.png ",901,1102);
+$z[5][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220624-lp.png";
+$z[5][4]['text']="人才招聘";
+$z[5][4]['width']="1440";
+$z[5][4]['height']="711";
+$z[6]=Array("img"," http://up.a0218.com/uploads/allimg/150915/1-150915220634.png ",1104,1305);
+$z[6][4]['ddimg']="http://up.a0218.com/uploads/allimg/150915/1-150915220634-lp.png";
+$z[6][4]['text']="新闻中心";
+$z[6][4]['width']="1423";
+$z[6][4]['height']="799";
+
+?>

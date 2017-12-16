@@ -1,0 +1,1 @@
+INSERT INTO `qimaweb_plus_baidusitemap_list` VALUES('1','http://www.a0218.com/err/baidusitemap.php?dopost=sitemap_index&type=indexinc&pwd=76b228a2a517cafdaa&pagesize=0','2','1444285023','0');

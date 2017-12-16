@@ -1,0 +1,11 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='2000' row='3' col='4' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H307-lp.png' text='首页' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H307.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H400-lp.png' text='关于我们' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H400.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H406-lp.png' text='服务客户' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H406.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H413-lp.png' text='服务范围' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H413.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H418-lp.png' text='成功案例' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H418.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H430-lp.png' text='联系我们' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H430.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H438-lp.png' text='企业团队列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H438.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H446-lp.png' text='企业团队内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H446.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H455-lp.png' text='新闻资讯列表页' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H455.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/150919/1-1509191H508-lp.png' text='新闻资讯内容页' width='' height=''} http://up.a0218.com/uploads/allimg/150919/1-1509191H508.png {/dede:img}

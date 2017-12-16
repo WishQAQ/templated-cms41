@@ -1,0 +1,9 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='6' value='3'/}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234439-lp.png' text='首页' width='1423' height='2500'} http://up.a0218.com/uploads/allimg/151002/1-151002234439.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234537-lp.png' text='关于我们' width='1423' height='1368'} http://up.a0218.com/uploads/allimg/151002/1-151002234537.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234549-lp.png' text='加入我们（招聘列表）' width='1423' height='1143'} http://up.a0218.com/uploads/allimg/151002/1-151002234549.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234601-lp.png' text='健身房展示' width='1423' height='1327'} http://up.a0218.com/uploads/allimg/151002/1-151002234601.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234614-lp.png' text='课程安排' width='1423' height='1973'} http://up.a0218.com/uploads/allimg/151002/1-151002234614.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234625-lp.png' text='联系我们' width='1423' height='1288'} http://up.a0218.com/uploads/allimg/151002/1-151002234625.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234637-lp.png' text='新闻动态列表页' width='1423' height='1315'} http://up.a0218.com/uploads/allimg/151002/1-151002234637.png {/dede:img}
+{dede:img ddimg='http://up.a0218.com/uploads/allimg/151002/1-151002234647-lp.png' text='新闻内容页' width='1423' height='1118'} http://up.a0218.com/uploads/allimg/151002/1-151002234647.png {/dede:img}

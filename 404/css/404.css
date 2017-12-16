@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;padding: 0;}
+body{font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;color: #9B9B9B;background:#F3F3F3;}
+.main-err{width:500px;background:#fff;margin:120px auto 80px;-webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .3);box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .3);padding:30px 50px 50px 50px;}
+.main-err a{color:#00c3b6;text-decoration: none;font-size:20px;}
+.main-err h1{font-size:36px;padding-bottom:20px;color:#9B9B9B;}
+.main-err h1 span{font-size:60px;font-weight:bold;padding-right:15px;color:#333}
+.main-err p{line-height:2em;font-size:20px;color:#9B9B9B;}
+.main-err .form-control, .btn-primary{padding:15px 10px;border:0px;background:#f1f1f1;border-radius: 0px;color:#999;outline:0;font-size:16px;border:1px solid #00c3b6;}
+.main-err .form-control{width:395px;}
+.main-err .btn-primary{font-family: "Microsoft Yahei";background:#00c3b6;color:#fff;cursor:pointer;width:80px;overflow:hidden;margin-left:-5px;}
+.main-err .form-group{margin-top:10px;}
+
+
+#header{box-shadow:0 0 4px rgba(255,255,255,.15);background-color:#323232;}
+#container{background:url(/skin/1.0/images/love-bg.jpg) center bottom no-repeat fixed;background-size:100%;padding:20px 0;}
+#container .feel-go{text-align:center;}
+#container .feel-go a{background:#00c3b6;display:inline-block;font-size:14px;padding:8px 25px;border-radius:20px;color:#FFF;margin:30px auto}
+#container .feel-go a i{margin-left:3px}
+#container .feel-go a:hover{background-color:#ea4c89}

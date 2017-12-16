@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>404</title>
+  <link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmsurl/}/404/css/404.css">
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/i/ajax_main.js"></script>
+ </head>
+<body>
+  {dede:include filename="head.htm"/}
+  <div class="main-err">
+   <h1><span>404</span>页面未找到</h1>
+   <p>很抱歉!这个页面已经找不到了.</p>
+   <p>你可以返回首页 <a href="{dede:global.cfg_basehost/}">{dede:global.cfg_basehost/}</a></p>
+   <p>在下面搜索您所需的内容或选择您喜欢的模板</p>
+   <form action="{dede:global.cfg_cmsurl/}/i/" method="post">
+   <input type="hidden" name="type" value="search">
+   <input type="hidden" name="kwtype" value="0">
+    <div class="form-group">
+     <input type="text" name="q" class="form-control" placeholder="请输入关键字..." value="" />
+     <button class="btn btn-primary" type="submit">搜索</button>
+    </div>
+   </form>
+  </div>
+  
+  <div id="container" class="container">
+   <section id="cool"> 
+    <div class="content grid centralnav"> 
+     <ul id="newlist"></ul> 
+     <div class="feel-go" id="pagecount">
+     	<a onclick='nodata()'>换一批 <i class="fa fa-chevron-circle-right"></i></a>
+     </div>
+    </div> 
+   </section> 
+  </div>
+ {dede:include filename="footer.htm"/}
+ <script src="{dede:global.cfg_cmsurl/}/404/arclist.php" language="javascript"></script>
+ <script src="{dede:global.cfg_cmsurl/}/404/js/arclist.js"></script>
+</body>
+</html>

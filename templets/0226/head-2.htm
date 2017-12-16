@@ -1,0 +1,65 @@
+<script language="javascript" type="text/javascript">
+	<!--
+		function cklogin(){
+		  var taget_obj = document.getElementById('loginreg');
+		  myajax = new DedeAjax(taget_obj,false,false,'','','');
+		  myajax.SendGet2("{dede:global.cfg_cmsurl/}/i/ajax_login-reg.php");
+		  DedeXHTTP = null;
+		}
+	-->
+</script> 
+  <header id="header"> 
+   <div class="content"> 
+    <div class="nav" role="navigation"> 
+     <ul id="nav-menu" class="nav-menu"> 
+      <li class="nav-toggle"> 
+       <div id="toggle-icon" class="toggle-icon" aria-controls="#nav-list" aria-expanded="false"> 
+        <i class="fa fa-bars"></i> 
+       </div> </li> 
+      <li class="signin-toggle" id="signin-toggle"></li> 
+      <li class="home-logo">
+      <a href="{dede:global.cfg_cmsurl/}/"><span class="text-replace">{dede:global.cfg_webname/}</span></a>
+      </li> 
+     </ul> 
+     <ul id="nav-list" class="nav-list"> 
+      <li id="logo"><a href="{dede:global.cfg_cmsurl/}/"><span class="text-replace">{dede:global.cfg_webname/}</span></a></li> 
+      <li><a href='{dede:global.cfg_cmsurl/}/' title="站窝窝模板网">站窝窝模板网</a></li>
+	  {dede:channel type='top' row='5' currentstyle="<li class='current-menu-item current_page_item'><a href='~typelink~' ~rel~>~typename~</a></li>"}
+      <li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+      {/dede:channel}
+      <li><a>更多</a> 
+       <ul class="sub-menu"> 
+        {dede:type typeid='5'}<li><a href="[field:typelink/]">[field:typename/]</a></li>{/dede:type}
+        <!--li><a href="#">关于我们</a></li--> 
+        {dede:type typeid='24'}<li><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:type}
+        <li><a href="{dede:global.cfg_basehost/}{dede:global.cfg_cmsurl/}/url.php">保存桌面</a></li> 
+       </ul> </li> 
+       <li id="loginreg">
+           <div><a data-sign="0" id="user-signin" class="user-signin">登录</a></div>
+           <div><a data-sign="1" id="user-reg" class="user-reg">注册</a></div>
+       </li>
+       <script language="javascript" type="text/javascript">cklogin();</script>
+       <li id="search" role="search"> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </header> 
+ <div id="billboard" class="billboard"> 
+   <div class="wrapper search-top" style="z-index:9;position:absolute;"> 
+    <div class="inner"> 
+	 <form class="searchform" action="{dede:global.cfg_cmsurl/}/i/" method="post">
+     <input type="hidden" name="type" value="search">
+     <input type="hidden" name="kwtype" value="0">
+     <input name="q" class="search-input" onkeyup="lookup(this.value);" autocomplete="off" onclick="if(this.value=='更多优质网站模板资源一搜尽有')this.value=''" onblur="if(this.value ==''){this.value=this.defaultValue}" value="更多优质网站模板资源一搜尽有"><button type="submit" id="home-searchIcon"><i class="fa fa-search"></i></button>
+     <div id="suggestions" style="display: none;">
+     	<div class="scul">
+        	<ul id="autoSuggestionsList"></ul>
+        </div>
+     </div>
+     </form>
+     <div class="k-hot">
+     	<span>热门搜索：</span>{dede:hotwords  num='15' subday='365' maxlength='16'/}
+     </div>
+    </div>
+   </div> 
+  </div>

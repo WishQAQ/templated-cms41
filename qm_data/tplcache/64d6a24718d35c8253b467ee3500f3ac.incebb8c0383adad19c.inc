@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("pagestyle","",0,91);
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="200";
+$z[0][4]['row']="3";
+$z[0][4]['col']="6";
+$z[0][4]['value']="3";
+$z[1]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25624.png ",93,287);
+$z[1][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25624-lp.png";
+$z[1][4]['text']="首页";
+$z[1][4]['width']="1423";
+$z[1][4]['height']="1124";
+$z[2]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25F4.png ",289,487);
+$z[2][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25F4-lp.png";
+$z[2][4]['text']="合作院校";
+$z[2][4]['width']="1423";
+$z[2][4]['height']="1544";
+$z[3]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25G7.png ",489,696);
+$z[3][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25G7-lp.png";
+$z[3][4]['text']="新闻资讯列表页";
+$z[3][4]['width']="1423";
+$z[3][4]['height']="1629";
+$z[4]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25H4.png ",698,905);
+$z[4][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25H4-lp.png";
+$z[4][4]['text']="新闻资讯内容页";
+$z[4][4]['width']="1423";
+$z[4][4]['height']="1145";
+$z[5]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25I1.png ",907,1120);
+$z[5][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25I1-lp.png";
+$z[5][4]['text']="在职领导介绍列表页";
+$z[5][4]['width']="1423";
+$z[5][4]['height']="1394";
+$z[6]=Array("img"," http://up.a0218.com/uploads/allimg/150927/1-15092H25I6.png ",1122,1335);
+$z[6][4]['ddimg']="http://up.a0218.com/uploads/allimg/150927/1-15092H25I6-lp.png";
+$z[6][4]['text']="在职领导介绍内容页";
+$z[6][4]['width']="1423";
+$z[6][4]['height']="1025";
+
+?>

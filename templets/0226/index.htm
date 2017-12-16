@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="{dede:global.cfg_soft_lang/}" /> 
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" /> 
+  <meta name="description" content="{dede:global.cfg_description/}" /> 
+  <meta name="author" content="{dede:global.cfg_basehost/}" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta http-equiv="x-dns-prefetch-control" content="on" /> 
+  <link rel='dns-prefetch' href='{dede:global.cfg_basehost/}'>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection"> 
+  <title>{dede:global.cfg_webname/}_网站模板,CMS程序模板</title> 
+  <!--[if lt IE 9]>
+    <script src="{dede:global.cfg_cmsurl/}/skin/1.0/js/html5.js" type="text/javascript"></script>
+  <![endif]--> 
+  <link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="{dede:global.cfg_cmsurl/}/skin/1.0/css/style.css?ver=1.0" type="text/css" media="all" /> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery.min.js?ver=1.0"></script> 
+  <script type="text/javascript" src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery-migrate.min.js?ver=1.0"></script> 
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/i/ajax_main.js"></script>
+  <script src="{dede:global.cfg_cmsurl/}/skin/1.0/js/jquery.lazyload.js" type="text/javascript"></script>
+  <script language="javascript">
+	$(function(){
+        $('img[data-original]').lazyload({
+          effect: "fadeIn"
+        });
+    })
+  </script> 
+ </head> 
+ <body> 
+ {dede:include filename="head-2.htm"/}
+  <div id="container" class="container">
+   <section id="notice"> 
+    <div class="content"> 
+     <div class="wrapper"> 
+      <ul> 
+       <span class="icon"><i class="fa fa-bullhorn"></i></span> 
+       {dede:arclist typeid='6' row='6' orderby='pubdate' titlelen='60'}
+       <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a><span>[field:pubdate function="MyDate('m-d H:i',@me)"/]</span></li> 
+       {/dede:arclist}
+      </ul> 
+     </div> 
+    </div> 
+   </section> 
+   <section id="aim" role="slider"> 
+    <div class="content"> 
+     <div class="wrapper"> 
+      <div class="stick"> 
+       <div class="swiper-container"> 
+        <div class="swiper-wrapper"> 
+         {dede:arclist flag='f' row='10' typeid='4' orderby='pubdate'}
+         <div class="swiper-slide"> 
+          <a class="post-thumbnail" href="[field:arcurl/]" target="_blank"><img src="[field:picname/]" /></a> 
+         </div>
+		 {/dede:arclist}
+        </div> 
+        <div class="pagination"></div> 
+        <a class="arrow slider-prev" hidefocus="true"><i class="fa fa-chevron-left"></i></a> 
+        <a class="arrow slider-next" hidefocus="true"><i class="fa fa-chevron-right"></i></a> 
+       </div> 
+      </div> 
+      <div class="push"> 
+       <!--div class="box"> 
+        <div class="inner">
+         <a href="#">
+         <img width="300" height="250" src="{dede:global.cfg_cmsurl/}/skin/1.0/images/index_a2.jpg" />
+         </a>
+        </div> 
+       </div-->
+       <div class="box"> 
+        <div class="inner">
+        {dede:sql sql="SELECT * FROM #@__archives WHERE id=57"}
+         <a href="[field:global.cfg_cmsurl/]/self-help/57.html">
+         <img width="300" height="250" src="[field:litpic/]" alt="[field:title/]" />
+         </a>
+        {/dede:sql}
+        </div> 
+       </div> 
+       <div class="box"> 
+        <div class="inner">
+         <a href="{dede:global.cfg_cmsurl/}/i/">
+         <img width="300" height="250" src="{dede:global.cfg_cmsurl/}/skin/1.0/images/index_a1.png" />
+         </a>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <section id="cool"> 
+    <div class="content grid centralnav"> 
+     <ul>
+     {dede:arclist row='16' type='image.' typeid='7' titlelen='60'}
+      <li class="group"> 
+       <div class="item"> 
+        <div class="thumb"> 
+         <a href="[field:arcurl/]" title="[field:fulltitle/]"> <img width="280" height="180" alt="[field:title/]" data-original="[field:picname/]" src="[field:global.cfg_cmsurl/]/skin/1.0/images/original.png" /> </a> 
+        </div> 
+        <div class="meta"> 
+         <div class="title">
+          <h2><a href="[field:arcurl/]" rel="bookmark" title="[field:title/]">[field:title/]</a></h2>
+         </div> 
+         <div class="extra"> 
+          <i class="fa fa-bookmark"></i> 
+          <a href="[field:typeurl/]" rel="category tag">[field:typename/]</a> 
+          <span>[field:click/]<i class="fa fa-fire"></i></span> 
+         </div> 
+        </div> 
+        <div class="data"> 
+         <time class="time">
+         <i class="fa fa-date"></i>
+            [field:pubdate function="MyDate('Y-m-d',@me)"/]
+         </time> 
+         <span class="comment-num" title="[field:dows/]人下载"><i class="fa fa-dows"></i>[field:dows/]</span> 
+         <span class="heart-num" title="[field:stows/]人收藏"><i class="fa fa-shopping-cart_stows"></i>[field:stows/]</span> 
+        </div> 
+       </div> </li>
+     {/dede:arclist}
+     </ul> 
+    </div> 
+   </section> 
+  <section id="love"> 
+   <div class="content"> 
+    <ul> 
+     {dede:arclist typeid='7' flag='c' row='8' titlelen='60' orderby='pubdate'}
+     <li class="group"> 
+      <div class="gallery thumb"> 
+       <a href="[field:arcurl/]">
+       <img data-original="[field:picname/]" src="[field:global.cfg_cmsurl/]/skin/1.0/images/original300x300.png" width="300" height="300" alt="[field:title/]"> 
+        <div class="gallery-ico">
+         <i class="fa fa-link"></i>
+        </div> 
+        <div class="gallery-mask"></div> </a> 
+      </div> 
+      <div class="meta"> 
+       <div class="title"> 
+        <a href="[field:arcurl/]" rel="bookmark" title="[field:title/]">[field:title/]</a> 
+       </div> 
+       <div class="extra"> 
+        <time class="time"><i class="fa fa-date"></i> 
+        	[field:pubdate function="MyDate('Y-m-d',@me)"/]
+        </time> 
+        <span class="comment-num" title="[field:dows/]人下载"><i class="fa fa-dows"></i>[field:dows/]</span>
+        <span class="view-num" title="[field:click/]人浏览"><i class="fa fa-eye"></i>[field:click/]</span>
+        <span class="heart-num" title="[field:stows/]人收藏"><i class="fa fa-shopping-cart_stows"></i>[field:stows/]</span> 
+       </div> 
+      </div> </li> 
+      {/dede:arclist}
+    </ul> 
+    <div class="feel-go">
+     <a href="{dede:type typeid='7'}[field:typeurl/]{/dede:type}">更多推荐模板 <i class="fa fa-chevron-circle-right"></i></a>
+    </div> 
+   </div> 
+  </section>
+   <section id="users"> 
+    <div class="content"> 
+     <ul> 
+      <li> <p><i class="fa fa-search"></i></p> <h2 class="title">探索发现</h2> <h3>探索创造性的思维，发现引领最新的设计潮流</h3> </li> 
+      <li> <p><i class="fa fa-user"></i></p> <h2 class="title">用户设计</h2> <h3>以用户为中心，以体验为至上，以细节为成败</h3> </li> 
+      <li> <p><i class="fa fa-paper-plane-o"></i></p> <h2 class="title">情感传递</h2> <h3>不只是设计，更多的是售后的体验</h3> </li> 
+     </ul> 
+    </div> 
+   </section> 
+   <section id="feature"> 
+    <ul> 
+     <li><a><div class="item"></div></a></li>
+     <li><a><div class="item"></div></a></li> 
+     <li><a><div class="item"></div></a></li>
+     <li><a><div class="item"></div></a></li> 
+    </ul> 
+   </section> 
+  </div>
+ {dede:include filename="footer.htm"/}
+ </body>
+</html>
